@@ -26,5 +26,5 @@ scoop install jcwillox-python/<app>
 <tr><td><a href='https://github.com/httpie/httpie'><b>HTTPie</b></a> — <a href='bucket/httpie.json'><code>httpie</code></a> <br> Modern, user-friendly command-line HTTP client <br><br></td></tr>
 <tr><td><a href='https://github.com/Dinnerbone/mcstatus'><b>mcstatus</b></a> — <a href='bucket/mcstatus.json'><code>mcstatus</code></a> <br> Tool for checking the status of a Minecraft server <br><br></td></tr>
 <tr><td><a href='https://github.com/jtesta/ssh-audit'><b>ssh-audit</b></a> — <a href='bucket/ssh-audit.json'><code>ssh-audit</code></a> <br> An SSH server & client configuration security auditing tool <br><br></td></tr>
-<tr><td><a href='https://github.com/pypa/twine'><b>twine</b></a> — <a href='bucket/twine.json'><code>twine</code></a> <br> Utilities for interacting with PyPI <br><br></td></tr>
+<tr><td><a href='https://github.com/pypa/twine'><b>twine</b></a> — <a href='bucket/twine-py.json'><code>twine-py</code></a> <br> Utilities for interacting with PyPI <br><br></td></tr>
 </table>
