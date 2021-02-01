@@ -1,0 +1,16 @@
+{
+    "version": "0.9.1",
+    "description": "Command-line tool for Home Assistant",
+    "homepage": "https://github.com/home-assistant-ecosystem/home-assistant-cli",
+    "license": "Apache-2.0",
+    "url": "https://github.com/home-assistant/home-assistant-cli/archive/0.9.1.tar.gz",
+    "hash": "c5768a553a9c566cd0f5a79a9023f9806afa88c633d0f2d3c11a53eee2da3169",
+    "extract_dir": "home-assistant-cli-0.9.1",
+    "bin": "venv\\scripts\\hass-cli.exe",
+    "pre_install": "& \"$bucketsdir\\$bucket\\scripts\\Install-WithVirtualEnv.ps1\"",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/home-assistant/home-assistant-cli/archive/$version.tar.gz",
+        "extract_dir": "home-assistant-cli-$version"
+    }
+}

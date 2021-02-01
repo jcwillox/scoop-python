@@ -1,0 +1,16 @@
+{
+    "version": "0.3.1",
+    "description": "A simple downloader written in Python",
+    "homepage": "https://github.com/deepjyoti30/downloader-cli",
+    "license": "MIT",
+    "url": "https://github.com/deepjyoti30/downloader-cli/archive/0.3.1.tar.gz",
+    "hash": "bd88aad5967b2fc7f70f715725a51a398c56e4fae791463dafda3a69730b277d",
+    "extract_dir": "downloader-cli-0.3.1",
+    "bin": "venv\\scripts\\dw.exe",
+    "pre_install": "& \"$bucketsdir\\$bucket\\scripts\\Install-WithVirtualEnv.ps1\"",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/deepjyoti30/downloader-cli/archive/$version.tar.gz",
+        "extract_dir": "downloader-cli-$version"
+    }
+}

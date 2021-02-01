@@ -1,0 +1,19 @@
+{
+    "version": "5.1.1",
+    "description": "Tool for checking the status of a Minecraft server",
+    "homepage": "https://github.com/Dinnerbone/mcstatus",
+    "license": "Apache-2.0",
+    "url": "https://github.com/Dinnerbone/mcstatus/archive/release-5.1.1.tar.gz",
+    "hash": "20de89e1ec19ae3310c315702582392b99b3b9a83b0c8eee2637670ebbe16a7c",
+    "extract_dir": "mcstatus-release-5.1.1",
+    "bin": "venv\\scripts\\mcstatus.exe",
+    "pre_install": "& \"$bucketsdir\\$bucket\\scripts\\Install-WithVirtualEnv.ps1\"",
+    "checkver": {
+        "url": "https://github.com/Dinnerbone/mcstatus/releases/latest",
+        "regex": "release-([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/Dinnerbone/mcstatus/archive/release-$version.tar.gz",
+        "extract_dir": "mcstatus-release-$version"
+    }
+}

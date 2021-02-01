@@ -1,0 +1,23 @@
+{
+    "version": "3.3.0",
+    "description": "Utilities for interacting with PyPI",
+    "homepage": "https://github.com/pypa/twine",
+    "license": "Apache-2.0",
+    "url": "https://files.pythonhosted.org/packages/f9/43/51c3139667e90399a4d7886013631ad020ad102db5c2907cb240ce56f3c1/twine-3.3.0.tar.gz",
+    "hash": "fcffa8fc37e8083a5be0728371f299598870ee1eccc94e9a25cef7b1dcfa8297",
+    "extract_dir": "twine-3.3.0",
+    "bin": "venv\\scripts\\twine.exe",
+    "pre_install": "& \"$bucketsdir\\$bucket\\scripts\\Install-WithVirtualEnv.ps1\"",
+    "checkver": {
+        "url": "https://pypi.org/project/twine/",
+        "regex": "(?sm)https:\\/\\/files\\.pythonhosted\\.org\\/(?<path>[\\w\\-\\/\\.]+\\.tar\\.gz).+?(?<version>[\\d\\.]+)\\.tar\\.gz"
+    },
+    "autoupdate": {
+        "url": "https://files.pythonhosted.org/$matchPath",
+        "hash": {
+            "url": "https://pypi.org/project/twine/",
+            "regex": "(?sm)Hashes for $basename.*?$sha256"
+        },
+        "extract_dir": "twine-$version"
+    }
+}
