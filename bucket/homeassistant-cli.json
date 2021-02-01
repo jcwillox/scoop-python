@@ -4,7 +4,7 @@
     "homepage": "https://github.com/home-assistant-ecosystem/home-assistant-cli",
     "license": "Apache-2.0",
     "url": "https://github.com/home-assistant/home-assistant-cli/archive/0.9.1.tar.gz",
-    "hash": "c5768a553a9c566cd0f5a79a9023f9806afa88c633d0f2d3c11a53eee2da3169",
+    "hash": "8487bb440872c57c5684e40b1f0c3771045ea9ced11749f0d38aefec14d1a163",
     "extract_dir": "home-assistant-cli-0.9.1",
     "bin": "venv\\scripts\\hass-cli.exe",
     "pre_install": "& \"$bucketsdir\\$bucket\\scripts\\Install-WithVirtualEnv.ps1\"",
