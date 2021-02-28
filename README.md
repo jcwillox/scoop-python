@@ -1,8 +1,8 @@
 # Scoop Python
 
-Each application in this repository is installed into a virtual environment and requires valid python interpreter to be installed on the system. This is similar to how `brew` installs python applications.
+Each application in this repository is installed into a virtual environment and requires a valid python interpreter to be installed on the system. This is similar to how [`brew`](https://brew.sh) installs python applications.
 
-This repository also includes manifests to install non-portable versions of Python, these will install to default location e.g. `AppData` or `Program Files`.
+This repository also includes manifests to install non-portable versions of Python, these will install to default location e.g. `AppData` or `Program Files` and will preserve installed pip packages between patch upgrades.
 
 ## Usage
 
