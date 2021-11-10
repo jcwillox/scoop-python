@@ -1,11 +1,11 @@
 {
-    "version": "3.5.0",
+    "version": "3.6.0",
     "description": "Utilities for interacting with PyPI",
     "homepage": "https://github.com/pypa/twine",
     "license": "Apache-2.0",
-    "url": "https://files.pythonhosted.org/packages/c4/6d/1979e4d7b5791705957c262c44ffbe719aa39a4dba44b7678f01416deee6/twine-3.5.0.tar.gz",
-    "hash": "218c42324121d4417cbcbbda59c623b8acc4becfce3daa545e6b6dd48bd21385",
-    "extract_dir": "twine-3.5.0",
+    "url": "https://files.pythonhosted.org/packages/97/af/d438c8eba421a8323175843d312d6e2f8c6917190a6aec3796e363bad8b4/twine-3.6.0.tar.gz",
+    "hash": "4caad5ef4722e127b3749052fcbffaaf71719b19d4fd4973b29c469957adeba2",
+    "extract_dir": "twine-3.6.0",
     "bin": "venv\\scripts\\twine.exe",
     "pre_install": "& \"$bucketsdir\\$bucket\\scripts\\Install-WithVirtualEnv.ps1\"",
     "checkver": {
