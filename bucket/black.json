@@ -1,11 +1,11 @@
 {
-    "version": "21.10b0",
+    "version": "21.11b0",
     "description": "The uncompromising Python code formatter",
     "homepage": "https://black.readthedocs.io/en/stable",
     "license": "MIT",
-    "url": "https://files.pythonhosted.org/packages/62/b6/82269f88c3e7855f058706a5b326b827699a3c88c96b37d9abfb81e2c62b/black-21.10b0.tar.gz",
-    "hash": "a9952229092e325fe5f3dae56d81f639b23f7131eb840781947e4b2886030f33",
-    "extract_dir": "black-21.10b0",
+    "url": "https://files.pythonhosted.org/packages/2f/db/03e8cef689ab0ff857576ee2ee288d1ff2110ef7f3a77cac62e61f18acaf/black-21.11b0.tar.gz",
+    "hash": "83f3852301c8dcb229e9c444dd79f573c8d31c7c2dad9bbaaa94c808630e32aa",
+    "extract_dir": "black-21.11b0",
     "bin": [
         "venv\\scripts\\black.exe",
         "venv\\scripts\\blackd.exe",
