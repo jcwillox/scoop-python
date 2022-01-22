@@ -5,14 +5,14 @@ param (
 Write-Host "Installing virtual environment... " -NoNewline
 
 function Get-Python {
-    if (Get-Command "py") {
+    if (Get-Command "py" -ErrorAction Ignore) {
         return "py"
-    } elseif (Get-Command "python3") {
-        return "python3"
-    } elseif (Get-Command "python") {
+    } elseif (Get-Command "python" -ErrorAction Ignore) {
         return "python"
+    } elseif (Get-Command "python3" -ErrorAction Ignore) {
+        return "python3"
     } else {
-        Write-Host "Unable to find python distribution, try running 'scoop install python39'"
+        Write-Host "Unable to find python distribution, try running 'scoop install python310-np'"
         exit 1
     }
 }
