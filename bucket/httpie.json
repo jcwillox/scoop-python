@@ -1,11 +1,11 @@
 {
-    "version": "3.0.2",
+    "version": "1.0.2",
     "description": "Modern, user-friendly command-line HTTP client",
     "homepage": "https://github.com/httpie/httpie",
     "license": "BSD-3-Clause",
-    "url": "https://github.com/httpie/httpie/archive/3.0.2.tar.gz",
-    "hash": "737a2d7ce387e81cac14ab071ca8f28701a75d2a4d53ab8ccb8eba01a50702f3",
-    "extract_dir": "httpie-3.0.2",
+    "url": "https://github.com/httpie/httpie/archive/1.0.2.tar.gz",
+    "hash": "f11f5ecdbcc0571aa865fb29cd5db68ba6bce4f15a5aae3f27a32d19b0854dc9",
+    "extract_dir": "httpie-1.0.2",
     "bin": [
         "venv\\scripts\\http.exe",
         "venv\\scripts\\https.exe",
