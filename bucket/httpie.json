@@ -1,23 +1,27 @@
 {
-    "version": "1.0.2",
+    "version": "3.0.2",
     "description": "Modern, user-friendly command-line HTTP client",
     "homepage": "https://github.com/httpie/httpie",
     "license": "BSD-3-Clause",
-    "url": "https://github.com/httpie/httpie/archive/1.0.2.tar.gz",
-    "hash": "f11f5ecdbcc0571aa865fb29cd5db68ba6bce4f15a5aae3f27a32d19b0854dc9",
-    "extract_dir": "httpie-1.0.2",
+    "url": "https://files.pythonhosted.org/packages/97/42/fff91fbf037e5a0cfbc0d5c3fae7e99afcb4867a2a8c896d4a1c90b2b7fe/httpie-3.0.2.tar.gz",
+    "hash": "27f17454b2a1fdde79d1ed0ee679941894596829c07fadb9cfe3872d7a455e99",
+    "extract_dir": "httpie-3.0.2",
     "bin": [
         "venv\\scripts\\http.exe",
         "venv\\scripts\\https.exe",
-        [
-            "venv\\scripts\\http.exe",
-            "httpie"
-        ]
+        "venv\\scripts\\httpie.exe"
     ],
     "pre_install": "& \"$bucketsdir\\$bucket\\scripts\\Install-WithVirtualEnv.ps1\"",
-    "checkver": "github",
+    "checkver": {
+        "url": "https://pypi.org/project/httpie/",
+        "regex": "(?sm)https:\\/\\/files\\.pythonhosted\\.org\\/(?<path>[\\w\\-\\/\\.]+\\.tar\\.gz).+?(?<version>[\\d\\.]+[b\\d]*)\\.tar\\.gz"
+    },
     "autoupdate": {
-        "url": "https://github.com/httpie/httpie/archive/$version.tar.gz",
+        "url": "https://files.pythonhosted.org/$matchPath",
+        "hash": {
+            "url": "https://pypi.org/project/httpie/",
+            "regex": "(?sm)Hashes for $basename.*?$sha256"
+        },
         "extract_dir": "httpie-$version"
     }
 }
