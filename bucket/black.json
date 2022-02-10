@@ -11,7 +11,10 @@
         "venv\\scripts\\blackd.exe",
         "venv\\scripts\\black-primer.exe"
     ],
-    "pre_install": "& \"$bucketsdir\\$bucket\\scripts\\Install-WithVirtualEnv.ps1\" \"[d]\"",
+    "pre_install": [
+        "$bpath = if ($app.LocalPath) { $app.LocalPath.Directory.Parent.FullName } else { \"$bucketsdir\\$bucket\" }",
+        "& (Join-Path \"$bpath\" \"scripts\\Install-WithVirtualEnv.ps1\") \"[d]\""
+    ],
     "checkver": {
         "url": "https://pypi.org/project/black/",
         "regex": "(?sm)https:\\/\\/files\\.pythonhosted\\.org\\/(?<path>[\\w\\-\\/\\.]+\\.tar\\.gz).+?(?<version>[\\d\\.]+[b\\d]*)\\.tar\\.gz"

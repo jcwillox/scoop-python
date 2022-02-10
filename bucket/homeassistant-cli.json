@@ -7,7 +7,10 @@
     "hash": "0ec8b52fc3e21b3277a0d0038e1beca4b51c2d035783cca08b472cb38263c908",
     "extract_dir": "home-assistant-cli-0.9.4",
     "bin": "venv\\scripts\\hass-cli.exe",
-    "pre_install": "& \"$bucketsdir\\$bucket\\scripts\\Install-WithVirtualEnv.ps1\"",
+    "pre_install": [
+        "$bpath = if ($app.LocalPath) { $app.LocalPath.Directory.Parent.FullName } else { \"$bucketsdir\\$bucket\" }",
+        "& (Join-Path \"$bpath\" \"scripts\\Install-WithVirtualEnv.ps1\")"
+    ],
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/home-assistant/home-assistant-cli/archive/$version.tar.gz",

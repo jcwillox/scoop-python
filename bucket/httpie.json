@@ -11,7 +11,10 @@
         "venv\\scripts\\https.exe",
         "venv\\scripts\\httpie.exe"
     ],
-    "pre_install": "& \"$bucketsdir\\$bucket\\scripts\\Install-WithVirtualEnv.ps1\"",
+    "pre_install": [
+        "$bpath = if ($app.LocalPath) { $app.LocalPath.Directory.Parent.FullName } else { \"$bucketsdir\\$bucket\" }",
+        "& (Join-Path \"$bpath\" \"scripts\\Install-WithVirtualEnv.ps1\")"
+    ],
     "checkver": {
         "url": "https://pypi.org/project/httpie/",
         "regex": "(?sm)https:\\/\\/files\\.pythonhosted\\.org\\/(?<path>[\\w\\-\\/\\.]+\\.tar\\.gz).+?(?<version>[\\d\\.]+[b\\d]*)\\.tar\\.gz"

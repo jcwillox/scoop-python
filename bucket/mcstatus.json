@@ -7,7 +7,10 @@
     "hash": "05da487f66e4c737f803c5695ba2398c507407d60b96296ea4c341115ab0af4f",
     "extract_dir": "mcstatus-8.0.0",
     "bin": "venv\\scripts\\mcstatus.exe",
-    "pre_install": "& \"$bucketsdir\\$bucket\\scripts\\Install-WithVirtualEnv.ps1\"",
+    "pre_install": [
+        "$bpath = if ($app.LocalPath) { $app.LocalPath.Directory.Parent.FullName } else { \"$bucketsdir\\$bucket\" }",
+        "& (Join-Path \"$bpath\" \"scripts\\Install-WithVirtualEnv.ps1\")"
+    ],
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/Dinnerbone/mcstatus/archive/v$version.tar.gz",

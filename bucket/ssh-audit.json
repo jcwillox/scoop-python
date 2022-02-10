@@ -7,7 +7,10 @@
     "hash": "3397f751bc7b9997e4236aece2d41973c766f1e44b15bc6d51a1420a14bf05b6",
     "extract_dir": "ssh-audit-2.5.0",
     "bin": "venv\\scripts\\ssh-audit.exe",
-    "pre_install": "& \"$bucketsdir\\$bucket\\scripts\\Install-WithVirtualEnv.ps1\"",
+    "pre_install": [
+        "$bpath = if ($app.LocalPath) { $app.LocalPath.Directory.Parent.FullName } else { \"$bucketsdir\\$bucket\" }",
+        "& (Join-Path \"$bpath\" \"scripts\\Install-WithVirtualEnv.ps1\")"
+    ],
     "checkver": {
         "url": "https://pypi.org/project/ssh-audit/",
         "regex": "(?sm)https:\\/\\/files\\.pythonhosted\\.org\\/(?<path>[\\w\\-\\/\\.]+\\.tar\\.gz).+?(?<version>[\\d\\.]+)\\.tar\\.gz"

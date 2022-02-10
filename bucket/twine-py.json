@@ -7,7 +7,10 @@
     "hash": "8efa52658e0ae770686a13b675569328f1fba9837e5de1867bfe5f46a9aefe19",
     "extract_dir": "twine-3.8.0",
     "bin": "venv\\scripts\\twine.exe",
-    "pre_install": "& \"$bucketsdir\\$bucket\\scripts\\Install-WithVirtualEnv.ps1\"",
+    "pre_install": [
+        "$bpath = if ($app.LocalPath) { $app.LocalPath.Directory.Parent.FullName } else { \"$bucketsdir\\$bucket\" }",
+        "& (Join-Path \"$bpath\" \"scripts\\Install-WithVirtualEnv.ps1\")"
+    ],
     "checkver": {
         "url": "https://pypi.org/project/twine/",
         "regex": "(?sm)https:\\/\\/files\\.pythonhosted\\.org\\/(?<path>[\\w\\-\\/\\.]+\\.tar\\.gz).+?(?<version>[\\d\\.]+)\\.tar\\.gz"
