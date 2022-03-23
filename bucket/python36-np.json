@@ -1,6 +1,7 @@
 {
+    "##": ":Python 3.6",
     "version": "3.6.8",
-    "homepage": "https://www.python.org/",
+    "homepage": "https://www.python.org",
     "license": "Python-2.0",
     "architecture": {
         "64bit": {
