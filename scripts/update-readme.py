@@ -87,7 +87,10 @@ def main():
             manifest = json.loads(file.read())
         manifest_name = os.path.splitext(filename)[0]
         name = get_name(manifest_name, manifest)
-        output += f"<tr><td><a href='{manifest['homepage']}'><b>{name}</b></a> — <a href='{path}'><code>{manifest_name}</code></a> <br> {manifest.get('description', '')} <br><br></td></tr>\n"
+        output += f"<tr><td><a href='{manifest['homepage']}'><b>{name}</b></a> — <a href='{path}'><code>{manifest_name}</code></a>"
+        if "description" in manifest:
+            output += f" <br> {manifest['description']} <br><br>"
+        output += "</td></tr>\n"
 
     output += "</table>\n"
     print_diff(output)
