@@ -2,11 +2,12 @@ import argparse
 import difflib
 import json
 import os
-import re
 import subprocess
 import sys
 
 from typing import Dict, Union, List
+
+from natsort import os_sorted
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--dry-run", action="store_true")
@@ -67,10 +68,6 @@ def print_diff(output: str):
     )
 
 
-def natural_keys(text):
-    return [int(c) if c.isdigit() else c for c in re.split(r"(\d+)", text)]
-
-
 def main():
     args = parser.parse_args()
     tracked_files = get_tracked_files()
@@ -79,7 +76,7 @@ def main():
         output = file.read()
     output += "<table>\n"
 
-    for filename in sorted(os.listdir("bucket"), key=natural_keys):
+    for filename in os_sorted(os.listdir("bucket")):
         path = f"bucket/{filename}"
         if path not in tracked_files:
             continue
