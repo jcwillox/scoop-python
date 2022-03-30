@@ -8,8 +8,7 @@
     "extract_dir": "black-22.3.0",
     "bin": [
         "venv\\scripts\\black.exe",
-        "venv\\scripts\\blackd.exe",
-        "venv\\scripts\\black-primer.exe"
+        "venv\\scripts\\blackd.exe"
     ],
     "pre_install": [
         "$bpath = if ($app.LocalPath) { $app.LocalPath.Directory.Parent.FullName } else { \"$bucketsdir\\$bucket\" }",
