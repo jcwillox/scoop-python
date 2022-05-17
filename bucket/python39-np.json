@@ -1,16 +1,16 @@
 {
     "##": ":Python 3.9",
-    "version": "3.9.12",
+    "version": "3.9.13",
     "homepage": "https://www.python.org",
     "license": "Python-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://www.python.org/ftp/python/3.9.12/python-3.9.12-amd64.exe#/py3.exe",
-            "hash": "md5:cc816f1323d591087b70df5fc977feae"
+            "url": "https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe#/py3.exe",
+            "hash": "md5:e7062b85c3624af82079794729618eca"
         },
         "32bit": {
-            "url": "https://www.python.org/ftp/python/3.9.12/python-3.9.12.exe#/py3.exe",
-            "hash": "md5:1e8477792ec093c02991bd37b8615a2e"
+            "url": "https://www.python.org/ftp/python/3.9.13/python-3.9.13.exe#/py3.exe",
+            "hash": "md5:46c35b0a2a4325c275b2ed3187b08ac4"
         }
     },
     "installer": {
