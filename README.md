@@ -24,6 +24,7 @@ scoop install jcwillox-python/<app>
 | Manifests |
 | --------- |
 | [**black**](https://black.readthedocs.io/en/stable) — [`black`](bucket/black.json)<br>The uncompromising Python code formatter<br><br> |
+| [**cookiecutter**](https://github.com/cookiecutter/cookiecutter) — [`cookiecutter-py`](bucket/cookiecutter-py.json)<br>A command-line utility that creates projects from project templates<br><br> |
 | [**downloader-cli**](https://github.com/deepjyoti30/downloader-cli) — [`downloader-cli`](bucket/downloader-cli.json)<br>A simple downloader written in Python<br><br> |
 | [**homeassistant-cli**](https://github.com/home-assistant-ecosystem/home-assistant-cli) — [`homeassistant-cli`](bucket/homeassistant-cli.json)<br>Command-line tool for Home Assistant<br><br> |
 | [**HTTPie**](https://github.com/httpie/httpie) — [`httpie`](bucket/httpie.json)<br>Modern, user-friendly command-line HTTP client<br><br> |
