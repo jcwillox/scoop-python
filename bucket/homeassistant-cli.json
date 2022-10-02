@@ -1,11 +1,11 @@
 {
-    "version": "0.9.4",
+    "version": "0.9.5",
     "description": "Command-line tool for Home Assistant",
     "homepage": "https://github.com/home-assistant-ecosystem/home-assistant-cli",
     "license": "Apache-2.0",
-    "url": "https://github.com/home-assistant/home-assistant-cli/archive/0.9.4.tar.gz",
-    "hash": "0ec8b52fc3e21b3277a0d0038e1beca4b51c2d035783cca08b472cb38263c908",
-    "extract_dir": "home-assistant-cli-0.9.4",
+    "url": "https://github.com/home-assistant/home-assistant-cli/archive/0.9.5.tar.gz",
+    "hash": "5b74ac34de68eae3f31d9043890375a7ca21330ccfe0d59ef5678cbb567aff75",
+    "extract_dir": "home-assistant-cli-0.9.5",
     "bin": "venv\\scripts\\hass-cli.exe",
     "pre_install": [
         "$bpath = if ($app.LocalPath) { $app.LocalPath.Directory.Parent.FullName } else { \"$bucketsdir\\$bucket\" }",
