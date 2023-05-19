@@ -1,12 +1,12 @@
 {
     "##": ":HTTPie",
-    "version": "3.2.1",
+    "version": "3.2.2",
     "description": "Modern, user-friendly command-line HTTP client",
     "homepage": "https://github.com/httpie/httpie",
     "license": "BSD-3-Clause",
-    "url": "https://files.pythonhosted.org/packages/e9/38/e94dac67b61f4dab49c1d26dd47e0b13be8c69c8c1c4fad5a4a87de1d647/httpie-3.2.1.tar.gz",
-    "hash": "c9c0032ca3a8d62492b7231b2dd83d94becf3b71baf8a4bbcd9ed1038537e3ec",
-    "extract_dir": "httpie-3.2.1",
+    "url": "https://files.pythonhosted.org/packages/09/e0/11680a5c0d94742122835330b3250f91a3a5066970872e111cb3ac5ce204/httpie-3.2.2.tar.gz",
+    "hash": "8bfb671f0b39505c197fdef3367f7f99af5d0e81a4e22289bb4c1f0e72251c90",
+    "extract_dir": "httpie-3.2.2",
     "bin": [
         "venv\\scripts\\http.exe",
         "venv\\scripts\\https.exe",
