@@ -29,11 +29,13 @@ scoop install jcwillox-python/<app>
 | [**homeassistant-cli**](https://github.com/home-assistant-ecosystem/home-assistant-cli) — [`homeassistant-cli`](bucket/homeassistant-cli.json)<br>Command-line tool for Home Assistant<br><br> |
 | [**HTTPie**](https://github.com/httpie/httpie) — [`httpie`](bucket/httpie.json)<br>Modern, user-friendly command-line HTTP client<br><br> |
 | [**mcstatus**](https://github.com/Dinnerbone/mcstatus) — [`mcstatus`](bucket/mcstatus.json)<br>Tool for checking the status of a Minecraft server<br><br> |
+| [**pdm**](https://pdm.fming.dev) — [`pdm`](bucket/pdm.json)<br>A modern Python package and dependency manager supporting the latest PEP standards<br><br> |
 | [**Python 3.6 (Non-Portable)**](https://www.python.org) — [`python36-np`](bucket/python36-np.json) |
 | [**Python 3.7 (Non-Portable)**](https://www.python.org) — [`python37-np`](bucket/python37-np.json) |
 | [**Python 3.8 (Non-Portable)**](https://www.python.org) — [`python38-np`](bucket/python38-np.json) |
 | [**Python 3.9 (Non-Portable)**](https://www.python.org) — [`python39-np`](bucket/python39-np.json) |
 | [**Python 3.10 (Non-Portable)**](https://www.python.org) — [`python310-np`](bucket/python310-np.json) |
+| [**Python 3.11 (Non-Portable)**](https://www.python.org) — [`python311-np`](bucket/python311-np.json) |
 | [**ssh-audit**](https://github.com/jtesta/ssh-audit) — [`ssh-audit`](bucket/ssh-audit.json)<br>An SSH server & client configuration security auditing tool<br><br> |
 | [**twine**](https://github.com/pypa/twine) — [`twine-py`](bucket/twine-py.json)<br>Utilities for interacting with PyPI<br><br> |
 <!-- table-end -->
