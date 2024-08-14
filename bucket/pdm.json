@@ -1,10 +1,10 @@
 {
-    "version": "2.17.3",
+    "version": "2.18.0",
     "description": "A modern Python package and dependency manager supporting the latest PEP standards",
     "homepage": "https://pdm.fming.dev",
     "license": "MIT",
-    "url": "https://files.pythonhosted.org/packages/6d/c2/045c3c5c37d9dd297631a6fdcdd54bfc73196c8e5b43b7aca954e4de363a/pdm-2.17.3-py3-none-any.whl",
-    "hash": "3cc0fab468d68ce9c52ce1f2f2270ecb5396b23f17be4ac048ca901be88b15f1",
+    "url": "https://files.pythonhosted.org/packages/2b/81/581ba402c4831024123637866f7b15dddcfcfdfbbfbeb6deefbe1a42e2f7/pdm-2.18.0-py3-none-any.whl",
+    "hash": "4b892bd8454dd7c747a4154944623ad0a33bd1a7b41caaab59c4ee96d6a12911",
     "bin": "venv\\scripts\\pdm.exe",
     "pre_install": [
         "$bpath = if ($app.LocalPath) { $app.LocalPath.Directory.Parent.FullName } else { \"$bucketsdir\\$bucket\" }",
