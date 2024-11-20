@@ -37,6 +37,7 @@ scoop install jcwillox-python/<app>
 | [**Python 3.10 (Non-Portable)**](https://www.python.org) — [`python310-np`](bucket/python310-np.json) |
 | [**Python 3.11 (Non-Portable)**](https://www.python.org) — [`python311-np`](bucket/python311-np.json) |
 | [**Python 3.12 (Non-Portable)**](https://www.python.org) — [`python312-np`](bucket/python312-np.json) |
+| [**Python 3.13 (Non-Portable)**](https://www.python.org) — [`python313-np`](bucket/python313-np.json) |
 | [**ssh-audit**](https://github.com/jtesta/ssh-audit) — [`ssh-audit`](bucket/ssh-audit.json)<br>An SSH server & client configuration security auditing tool<br><br> |
 | [**twine**](https://github.com/pypa/twine) — [`twine-py`](bucket/twine-py.json)<br>Utilities for interacting with PyPI<br><br> |
 <!-- table-end -->
