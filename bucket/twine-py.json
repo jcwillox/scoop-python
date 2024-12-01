@@ -1,11 +1,11 @@
 {
-    "version": "6.0.0",
+    "version": "6.0.1",
     "description": "Utilities for interacting with PyPI",
     "homepage": "https://github.com/pypa/twine",
     "license": "Apache-2.0",
-    "url": "https://files.pythonhosted.org/packages/d1/71/2f838ca17e941a25353702ad993d5f6b2d8e3130b01185592e9465155fe1/twine-6.0.0.tar.gz",
-    "hash": "9a9b815b3bad3186cc85be92294d8e2509558e0315d69ed746c0594419c835de",
-    "extract_dir": "twine-6.0.0",
+    "url": "https://files.pythonhosted.org/packages/2c/33/88b80116504b61759fa2db05e13f2296b0d2e73568f5e731d020c13843b8/twine-6.0.1.tar.gz",
+    "hash": "36158b09df5406e1c9c1fb8edb24fc2be387709443e7376689b938531582ee27",
+    "extract_dir": "twine-6.0.1",
     "bin": "venv\\scripts\\twine.exe",
     "pre_install": [
         "$bpath = if ($app.LocalPath) { $app.LocalPath.Directory.Parent.FullName } else { \"$bucketsdir\\$bucket\" }",
